@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">FREH GESTION</string>
+    <string name="bienvenue">Merci d\'utiliser \'FREH GESTION'</string>
+    <string name="connect">CONNEXION</string>
+    <string name="inscrit">INSCRIPTION</string>
+    <string name="logo">logo de FrEh Gestion</string>
+    <string name="oubli">Mot de passe oublié?</string>
+    <string name="login">Entrer votre Login</string>
+    <string name="passwd">Entrer le mot de passe</string>
+    <string name="error">Login introuvable ou mot de passe erroné</string>
+    <string name="mail">Entrer votre E-mail</string>
+    <string name="passwdconfir">Confirmer le mot de passe</string>
+    <string name="textcode">Entrer le code reçu par mail</string>
+    <string name="errorcod">Code entré erroné</string>
+    <string name="none"> </string>
+</resources>
