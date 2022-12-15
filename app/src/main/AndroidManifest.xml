@@ -13,6 +13,20 @@
         android:theme="@style/Theme.FREHGESTION"
         tools:targetApi="31">
         <activity
+            android:name=".montexte"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".produit"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".Pageverif"
             android:exported="false">
             <meta-data

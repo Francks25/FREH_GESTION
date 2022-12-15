@@ -92,6 +92,7 @@
             app:layout_constraintTop_toTopOf="parent"
             android:hint="@string/connect"
             android:fontFamily="sans-serif-black"
+            android:background="@drawable/btnback"
             android:textColorHint="@color/green"
             android:backgroundTint="@color/white"
           />

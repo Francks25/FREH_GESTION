@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".produit"
+    android:id="@+id/first">
+
+    <TextView
+        android:id="@+id/textprod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="100dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Produits"
+        android:textColor="@color/yellow"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/but_recent"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="-270dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/btnback"
+        android:backgroundTint="@color/white"
+        android:fontFamily="sans-serif-black"
+        android:hint="RECENTS"
+        android:textColorHint="@color/green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/textprod" />
+
+    <Button
+        android:id="@+id/but_cat"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/btnback"
+        android:backgroundTint="@color/white"
+        android:fontFamily="sans-serif-black"
+        android:hint="CATEGORIES"
+        android:textColorHint="@color/green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/textprod" />
+
+    <Button
+        android:id="@+id/but_tous"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="270dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/btnback"
+        android:backgroundTint="@color/white"
+        android:fontFamily="sans-serif-black"
+        android:hint="TOUS"
+        android:textColorHint="@color/green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/textprod" />
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/Cl1"
+        >
+
+        <Button
+            android:id="@+id/but_modif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            android:hint="Modifier"
+            android:textColorHint="@color/white"
+
+            />
+
+        <Button
+            android:id="@+id/but_sup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            android:hint="Supprimer"
+            android:textColorHint="@color/red"
+            />
+
+    </LinearLayout>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:layout_constraintTop_toBottomOf="@id/but_cat"
+      android:orientation="vertical"
+      android:id="@+id/Cl1"
+      >
+
+      <ListView
+          android:id="@+id/listView1"
+          android:layout_width="match_parent"
+          android:layout_height="300dp"
+          app:layout_constraintTop_toTopOf ="parent"
+          app:layoutConstraintBottom_toBottomof="Parent"
+          app:layout_constraintStart_toStartOf="parent"
+          android:layout_marginTop="20dp"
+          >
+      </ListView>
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/btn_plus"
+            android:hint="+"
+            android:textColorHint="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginBottom="20dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

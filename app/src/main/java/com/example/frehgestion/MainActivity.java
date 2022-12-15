@@ -4,9 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -21,6 +23,7 @@ Button btn_conp1, btn_insp1;
         btn_insp1=findViewById(R.id.but_ins);
         textp1=findViewById(R.id.mot1);
         btn_conp1.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View view) {
                 Intent ob= new Intent(getApplicationContext(),MainActivity2.class);

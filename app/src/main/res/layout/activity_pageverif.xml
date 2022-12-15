@@ -4,6 +4,102 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Pageverif">
+    tools:context=".MainActivity2"
+    android:background="@drawable/fondlog2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="88dp">
+
+        <!-- <ImageView
+             android:layout_width="100dp"
+             android:layout_height="100dp"
+             android:contentDescription="@string/logo"
+             android:src="@mipmap/logo" />
+
+          -->
+        <TextView
+            android:id="@+id/textverifp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="180dp"
+            android:text="Vérifions votre Identité"
+            android:textColor="@color/gris"
+            android:textSize="30sp"
+            android:fontFamily="sans-serif-light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <EditText
+            android:id="@+id/log_mail"
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="100dp"
+            android:autofillHints="password"
+            android:hint="Entrer votre login ou Email valide"
+            android:textSize="12sp"
+            android:fontFamily="monospace"
+            android:textColorHint="@color/gris"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+        <TextView
+            android:id="@+id/textpverif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center"
+            android:text="@string/textcode"
+            android:textColor="@color/white2"
+            android:textSize="15sp"
+            android:fontFamily="sans-serif-black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <EditText
+            android:id="@+id/codepverif"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:autofillHints="creditCardSecurityCode"
+            android:fontFamily="monospace"
+            android:hint="0-0-0-0"
+            android:inputType="numberPassword"
+            android:textAlignment="center"
+            android:textColorHint="@color/yellow"
+            android:layout_marginStart="110dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.298"
+            app:layout_constraintStart_toStartOf="parent"
+             />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/but_con2"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="-440dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:hint="@string/connect"
+        android:fontFamily="sans-serif-black"
+        android:background="@drawable/btnback"
+        android:textColorHint="@color/green"
+        android:backgroundTint="@color/white"
+        />
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
