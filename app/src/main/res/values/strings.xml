@@ -13,4 +13,7 @@
     <string name="textcode">Entrer le code reçu par mail</string>
     <string name="errorcod">Code entré erroné</string>
     <string name="none"> </string>
+    <string name="nom_item">ordinateur</string>
+    <string name="price_item">0$</string>
+    <string name="item_decription">img laptop</string>
 </resources>
