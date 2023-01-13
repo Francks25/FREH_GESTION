@@ -16,4 +16,13 @@
     <string name="nom_item">ordinateur</string>
     <string name="price_item">0$</string>
     <string name="item_decription">img laptop</string>
+    <string-array name="articles">
+        <item>Ordinateur desktop</item>
+        <item>Imprimante</item>
+        <item>Iphone</item>
+        <item>Smartphone</item>
+        <item>scanner</item>
+        <item>cable alimentation</item>
+        <item>SSD 2To</item>
+    </string-array>
 </resources>

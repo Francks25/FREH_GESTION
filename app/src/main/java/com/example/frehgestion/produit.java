@@ -6,17 +6,24 @@ import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-public class produit extends AppCompatActivity {
 
+public class produit extends AppCompatActivity {
+    ListView listarticles;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_produit);
 
-        ListView list = (ListView)findViewById(R.id.listView1);
+        listarticles= findViewById(R.id.listView1);
+        String[] value= new String[]{"ordinateur", "serveur","ordinateur", "serveur"};
+        ArrayAdapter<String> adapteur = new ArrayAdapter<String>(produit.this, R.layout.item1, R.id.produits, value);
+        listarticles.setAdapter(adapteur);
+
+
+       /* ListView list = (ListView)findViewById(R.id.listView1);
         ArrayAdapter<String> tableau = new ArrayAdapter<>(list.getContext(), R.layout.activity_montexte);
         for(int i=0; i<40; i++) {
             tableau.add("coucou " + i); }
-        list.setAdapter(tableau);
+        list.setAdapter(tableau);*/
     }
 }
